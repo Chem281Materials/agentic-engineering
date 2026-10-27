@@ -28,7 +28,24 @@ copier copy gh:MolSSI/riprap my-new-project
 
 Answer the prompted questions:
 ```bash
+🎤Human-readable name of your project (e.g. "My Project")
+Cheminformatics Code
+🎤One sentence-description of what your project does
+Cheminformatics code to represent and manipulate molecules
+🎤 Base image for the development tooling layer
+ubuntu:24.04
+🎤 Which command-line coding agents should be installed?
+Choose your specific agent or just install all of them (default is all)
+🎤 Primary programming language?
+Python
+🎤 Create skeletal Python package files?
+n for No
+🎤 Create Sphinx documentation skeleton?
+n for No
+🎤 Where should project dependencies come from?
+Dependencies from pip only (no conda)
 
+Any other questions answer as you like!
 ```
 
 Launch the container where you will run your agents in:
@@ -44,12 +61,12 @@ The goal of this lab to create a cheminformatics software package that can help 
 ### Investigating Ai web chats
 Before looking at the ideas.md file for the requirements we want our software to have, I want you to prompt any web based ai chat of your choice with the following prompt:
 
-"""
+```
 Create a cheminformatics code that can represent molecules. It should be able to read and write molecules. The code should also include the following functionality:
 
 Calculate molecular descriptors
 Similarity searching
-"""
+```
 
 Once it finishes working on it, examine the code and try to run it on your local system. Answer the following questions:
 - What language(s) did it use to write the code with?
