@@ -105,6 +105,7 @@ opencode
 ```
 
 Note: *The agent will also ask for permission to run certain commands, you should read them to see what they are trying to do and decide to let them do it. Approval fatigue with agentic coding is a real thing and since we are running in a containerized environment, the damage it can do to our local system if it runs the wrong command is limited.*
+
 Note: *If you have approval fatigue you can disable permissions in opencode by Ctrl-P and then searching for Enable auto-approve permissions*
 
 As the agent works through the ideas.md file to build out the ARCHITECTURE.md it will prompt you with more questions and you should answer them to the best of your ability. Its okay to take time to look up answers or research what the best solution might be.
