@@ -142,6 +142,3 @@ Note: *This may take a while*
 Once the agent is finished working and has handed control back to you, look through the implemented code and start testing to see if the code builds and the tests run. Also examine the code to see if there are any mistakes or issues.
 
 So now you have finished 1 loop of the agent driven development! Once you are happy with how the first phase was implemented you can move on to the other phases and start the loop again, with running `rr-plan` on the next phase to generate requirements .md files and then running `rr-implement` with them.
-
-### Extra time
-hmmm.
