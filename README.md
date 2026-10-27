@@ -27,7 +27,7 @@ copier copy gh:MolSSI/riprap my-new-project
 ```
 
 Answer the prompted questions:
-```bash
+```text
 🎤Human-readable name of your project (e.g. "My Project")
 Cheminformatics Code
 🎤One sentence-description of what your project does
