@@ -80,13 +80,13 @@ Once it finishes working on it, examine the code and try to run it on your local
 ### Investigating Agentic Engineering
 The `ideas.md` in this repository contains a more thorough prompt with design decisions and pseudo function definitions. The goal of this is to provide a good foundation of how you want the code to look and work to narrow the scope of what the agent may want to do. This is the starting point and the code and architecture will be refined as you work to develop the software. Examine the file and understand what we want the architecture and functions to look like. You may also want to research or refresh some of the concepts like an adjacency list for graph representation, SMILES, and similarity searching with fingerprints.
 
-Once you are comfortable with the requirements of the code. You can start building out the second iteration which riprap calls the architecture. Under the `rqm` file you will see an `ARCHITECTURE.md` file, which is currently empty. `riprap` takes a disciplined AI engineering approach forcing the agents to adhere to a structured, multi-stage engineering methodology:
+Once you are comfortable with the requirements of the code. You can start building out the second iteration which riprap calls the architecture. Under the `rqm` directory you will see an `ARCHITECTURE.md` file, which is currently empty. `riprap` takes a disciplined AI engineering approach forcing the agents to adhere to a structured, multi-stage engineering methodology:
 
 1) Architecture
 2) Planning
 3) Implementation
 
-There are agent skills available for all 3 of these stages to help provide more context to the agent when working on each stage (see `.riprap/managed/skills`). The idea is that your agent will take your prompt (`ideas.md`) and build out each stage and you will have be able to trace your output code back through the stages and have a ledger of what you asked the agent to do. For each skill the agent will also ask clarifying questions and ask for you to make design decisions, **feel free to make any decisions you want here, your final code solution will reflect the decisions you make!**. Take some time to look through the agent skills to see what context is provided for them.
+There are agent skills available for all 3 of these stages to help provide more context to the agent when working on each stage (see `.riprap/managed/skills`). The idea is that your agent will take your prompt (`ideas.md`) and build out each stage and you will have be able to trace your output code back through the stages and have a ledger of what you asked the agent to do. For each skill the agent will also ask clarifying questions and ask for you to make design decisions, **feel free to make any decisions you want here, your final code solution will reflect the decisions you make!** Take some time to look through the agent skills to see what context is provided for them.
 
 #### rr-architecture
 So to start development process you can start your agent with `claude`, `codex` or `opencode`, and use the architecture skill on the ideas.md file like so:
@@ -129,7 +129,7 @@ The first step of the loop is to call `rr-plan` on the phase you are working on 
 /rr-plan Let's start planning Phase 1 of plan.md
 # Answer any of the questions it asks.
 ```
-After this step in the loop the agent will write out markdown file(s) for this phase of the requirements, and you can find the files under `rqm/`. You will also find that there are tags for the different requirements `rq-XXXXX`. These are stamps which will also be found in our implemented code so that we can map the requirements to the code as a form of traceability. These are not generated from the LLM, but are created from a script in `.riprap/managed/skills/rr-plan/rqm.sh`. You will also notice (gherkin)[https://www.ranorex.com/blog/gherkin-overview-use-cases-and-format/] scenarios for testing.
+After this step in the loop the agent will write out markdown file(s) for this phase of the requirements, and you can find the files under `rqm/`. You will also find that there are tags for the different requirements `rq-XXXXX`. These are stamps which will also be found in our implemented code so that we can map the requirements to the code as a form of traceability. These are not generated from the LLM, but are created from a script in `.riprap/managed/skills/rr-plan/rqm.sh`. You will also notice [gherkin](https://www.ranorex.com/blog/gherkin-overview-use-cases-and-format/) scenarios for testing.
 
 #### rr-implement
 The second step in the loop is to run the rr-implement skill to start implementing the code:
