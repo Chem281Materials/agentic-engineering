@@ -23,7 +23,7 @@ Install [Copier](https://copier.readthedocs.io/en/stable/#installation).
 
 Create a new riprap project by copying the template:
 ```bash
-copier copy gh:MolSSI/riprap project_name
+copier copy gh:MolSSI/riprap <NAME>
 ```
 
 Answer the prompted questions:
