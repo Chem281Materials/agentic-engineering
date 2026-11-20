@@ -48,6 +48,11 @@ Dependencies from pip only (no conda)
 Any other questions answer as you like!
 ```
 
+Move ideas.md into the newly created directory from the copier command
+```
+mv ideas.md newly_created_directory/
+```
+
 Launch the container where you will run your agents in:
 ```
 ./rr.sh
